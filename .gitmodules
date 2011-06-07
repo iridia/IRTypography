@@ -1,0 +1,6 @@
+[submodule "Externals/OmniGroup"]
+	path = Externals/OmniGroup
+	url = git://github.com/iridia/OmniGroup.git
+[submodule "Externals/IRFoundations"]
+	path = Externals/IRFoundations
+	url = git://github.com/iridia/IRFoundations.git
