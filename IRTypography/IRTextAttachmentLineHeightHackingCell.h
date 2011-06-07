@@ -7,6 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
 
 #import <OmniAppKit/OATextAttributes.h>
 #import <OmniAppKit/OATextStorage.h>

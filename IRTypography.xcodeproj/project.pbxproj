@@ -1,0 +1,988 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		AA747D9F0F9514B9006C5449 /* IRTypography_Prefix.pch in Headers */ = {isa = PBXBuildFile; fileRef = AA747D9E0F9514B9006C5449 /* IRTypography_Prefix.pch */; };
+		AACBBE4A0F95108600F1A2B1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AACBBE490F95108600F1A2B1 /* Foundation.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		FFFB5AE8139E9F6B00827D8D /* CoreText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FFFB5AE7139E9F6B00827D8D /* CoreText.framework */; settings = {ATTRIBUTES = (Required, ); }; };
+		FFFB5B1A139E9F9500827D8D /* IRManagedObjectTypographyPersisting.h in Headers */ = {isa = PBXBuildFile; fileRef = FFFB5AF8139E9F9100827D8D /* IRManagedObjectTypographyPersisting.h */; };
+		FFFB5B1B139E9F9500827D8D /* IRManagedObjectTypographyPresentationPrecalculating.h in Headers */ = {isa = PBXBuildFile; fileRef = FFFB5AF9139E9F9100827D8D /* IRManagedObjectTypographyPresentationPrecalculating.h */; };
+		FFFB5B1C139E9F9500827D8D /* IRManagedObjectTypographyPresenting.h in Headers */ = {isa = PBXBuildFile; fileRef = FFFB5AFA139E9F9100827D8D /* IRManagedObjectTypographyPresenting.h */; };
+		FFFB5B1D139E9F9500827D8D /* IRTextAttachmentLineHeightHackingCell.h in Headers */ = {isa = PBXBuildFile; fileRef = FFFB5AFB139E9F9100827D8D /* IRTextAttachmentLineHeightHackingCell.h */; };
+		FFFB5B1E139E9F9500827D8D /* IRTextAttachmentLineHeightHackingCell.m in Sources */ = {isa = PBXBuildFile; fileRef = FFFB5AFC139E9F9100827D8D /* IRTextAttachmentLineHeightHackingCell.m */; };
+		FFFB5B1F139E9F9500827D8D /* IRTextLayout.h in Headers */ = {isa = PBXBuildFile; fileRef = FFFB5AFD139E9F9100827D8D /* IRTextLayout.h */; };
+		FFFB5B20139E9F9500827D8D /* IRTextLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = FFFB5AFE139E9F9100827D8D /* IRTextLayout.m */; };
+		FFFB5B21139E9F9500827D8D /* IRTypography+AttributedStringsTransforming.m in Sources */ = {isa = PBXBuildFile; fileRef = FFFB5AFF139E9F9100827D8D /* IRTypography+AttributedStringsTransforming.m */; };
+		FFFB5B22139E9F9500827D8D /* IRTypography+AttributedStringsTransformingConveniences.m in Sources */ = {isa = PBXBuildFile; fileRef = FFFB5B00139E9F9100827D8D /* IRTypography+AttributedStringsTransformingConveniences.m */; };
+		FFFB5B23139E9F9500827D8D /* IRTypography+CoreText.m in Sources */ = {isa = PBXBuildFile; fileRef = FFFB5B01139E9F9100827D8D /* IRTypography+CoreText.m */; };
+		FFFB5B24139E9F9500827D8D /* IRTypography+DataDetection.m in Sources */ = {isa = PBXBuildFile; fileRef = FFFB5B02139E9F9100827D8D /* IRTypography+DataDetection.m */; };
+		FFFB5B25139E9F9500827D8D /* IRTypography+Experimental.m in Sources */ = {isa = PBXBuildFile; fileRef = FFFB5B03139E9F9100827D8D /* IRTypography+Experimental.m */; };
+		FFFB5B26139E9F9500827D8D /* IRTypography+Foundation.m in Sources */ = {isa = PBXBuildFile; fileRef = FFFB5B04139E9F9100827D8D /* IRTypography+Foundation.m */; };
+		FFFB5B27139E9F9500827D8D /* IRTypography+Interactivity.m in Sources */ = {isa = PBXBuildFile; fileRef = FFFB5B05139E9F9100827D8D /* IRTypography+Interactivity.m */; };
+		FFFB5B28139E9F9500827D8D /* IRTypography.h in Headers */ = {isa = PBXBuildFile; fileRef = FFFB5B06139E9F9100827D8D /* IRTypography.h */; };
+		FFFB5B29139E9F9500827D8D /* IRTypography.m in Sources */ = {isa = PBXBuildFile; fileRef = FFFB5B07139E9F9100827D8D /* IRTypography.m */; };
+		FFFB5B2A139E9F9500827D8D /* IRTypographyDefines.h in Headers */ = {isa = PBXBuildFile; fileRef = FFFB5B08139E9F9100827D8D /* IRTypographyDefines.h */; };
+		FFFB5B2E139E9FA900827D8D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FFFB5B2D139E9FA900827D8D /* UIKit.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		FFFB5B37139E9FC700827D8D /* NSAttributedString+IRTypographyAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = FFFB5B35139E9FC700827D8D /* NSAttributedString+IRTypographyAdditions.h */; };
+		FFFB5B38139E9FC700827D8D /* NSAttributedString+IRTypographyAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = FFFB5B36139E9FC700827D8D /* NSAttributedString+IRTypographyAdditions.m */; };
+		FFFB5BD3139EA1C500827D8D /* libOmniFileStore.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FFFB5B84139EA19200827D8D /* libOmniFileStore.a */; settings = {ATTRIBUTES = (Weak, ); }; };
+		FFFB5BD4139EA1C500827D8D /* libOmniBase.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FFFB5B74139EA18400827D8D /* libOmniBase.a */; settings = {ATTRIBUTES = (Weak, ); }; };
+		FFFB5BD5139EA1C500827D8D /* libOmniAppKit.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FFFB5B61139EA17D00827D8D /* libOmniAppKit.a */; settings = {ATTRIBUTES = (Weak, ); }; };
+		FFFB5BD6139EA1C500827D8D /* libOmniFoundation.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FFFB5BA1139EA19C00827D8D /* libOmniFoundation.a */; settings = {ATTRIBUTES = (Weak, ); }; };
+		FFFB5BD7139EA1C500827D8D /* libOmniQuartz.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FFFB5BBD139EA1A200827D8D /* libOmniQuartz.a */; settings = {ATTRIBUTES = (Weak, ); }; };
+		FFFB5BD8139EA1C500827D8D /* libOmniUI.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FFFB5BC6139EA1A800827D8D /* libOmniUI.a */; settings = {ATTRIBUTES = (Weak, ); }; };
+		FFFB5BD9139EA1C500827D8D /* libOmniUnzip.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FFFB5BD2139EA1AE00827D8D /* libOmniUnzip.a */; settings = {ATTRIBUTES = (Weak, ); }; };
+		FFFB5C72139EA46B00827D8D /* libIRFoundationsTouch.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FFFB5C0E139EA46100827D8D /* libIRFoundationsTouch.a */; settings = {ATTRIBUTES = (Weak, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		FFFB5B58139EA17D00827D8D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FFFB5B4B139EA17D00827D8D /* OmniAppKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 4AA1E7F908AA764600E2FF6B /* OmniAppKit.framework */;
+			remoteInfo = "OmniAppKit (Framework)";
+		};
+		FFFB5B5A139EA17D00827D8D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FFFB5B4B139EA17D00827D8D /* OmniAppKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 4AA1E81108AA764700E2FF6B /* OAUnitTests.octest */;
+			remoteInfo = OAUnitTests;
+		};
+		FFFB5B5C139EA17D00827D8D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FFFB5B4B139EA17D00827D8D /* OmniAppKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 4AA1E81E08AA764700E2FF6B /* OAMakeImageSizeIntegral */;
+			remoteInfo = OAMakeImageSizeIntegral;
+		};
+		FFFB5B5E139EA17D00827D8D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FFFB5B4B139EA17D00827D8D /* OmniAppKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 4AA1E82C08AA764700E2FF6B /* OAPatternColorPicker.bundle */;
+			remoteInfo = OAPatternColorPicker;
+		};
+		FFFB5B60139EA17D00827D8D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FFFB5B4B139EA17D00827D8D /* OmniAppKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 3434791511923B54007D0CE5 /* libOmniAppKit.a */;
+			remoteInfo = OmniAppKitTouch;
+		};
+		FFFB5B62139EA17D00827D8D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FFFB5B4B139EA17D00827D8D /* OmniAppKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 3401163511E5181A0016ADB3 /* libOmniAppKitTouchTests.a */;
+			remoteInfo = OmniAppKitTouchTests;
+		};
+		FFFB5B6F139EA18400827D8D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FFFB5B64139EA18400827D8D /* OmniBase.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 4A33D42808A0191B003A3FA5 /* OmniBase.framework */;
+			remoteInfo = OmniBase;
+		};
+		FFFB5B71139EA18400827D8D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FFFB5B64139EA18400827D8D /* OmniBase.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 34778CD211810BE700EC28C1 /* OBLoadBundle */;
+			remoteInfo = OBLoadBundle;
+		};
+		FFFB5B73139EA18400827D8D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FFFB5B64139EA18400827D8D /* OmniBase.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 342163B211907BF600C06E45 /* libOmniBase.a */;
+			remoteInfo = OmniBaseTouch;
+		};
+		FFFB5B75139EA18400827D8D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FFFB5B64139EA18400827D8D /* OmniBase.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 340115B011E515790016ADB3 /* libOmniBaseTouchTests.a */;
+			remoteInfo = OmniBaseTouchTests;
+		};
+		FFFB5B81139EA19200827D8D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FFFB5B77139EA19200827D8D /* OmniFileStore.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 8DC2EF5B0486A6940098B216 /* OmniFileStore.framework */;
+			remoteInfo = OmniFileStore;
+		};
+		FFFB5B83139EA19200827D8D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FFFB5B77139EA19200827D8D /* OmniFileStore.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 34D06C54125D202500CA3963 /* libOmniFileStore.a */;
+			remoteInfo = OmniFileStoreTouch;
+		};
+		FFFB5B85139EA19200827D8D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FFFB5B77139EA19200827D8D /* OmniFileStore.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 34C017A410995278001C110D /* ofs */;
+			remoteInfo = ofs;
+		};
+		FFFB5B9E139EA19C00827D8D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FFFB5B87139EA19C00827D8D /* OmniFoundation.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 4A4E075308AA72B10098FF0F /* OmniFoundation.framework */;
+			remoteInfo = OmniFoundation;
+		};
+		FFFB5BA0139EA19C00827D8D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FFFB5B87139EA19C00827D8D /* OmniFoundation.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 344D08BA1190D47300264D89 /* libOmniFoundation.a */;
+			remoteInfo = OmniFoundationTouch;
+		};
+		FFFB5BA2139EA19C00827D8D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FFFB5B87139EA19C00827D8D /* OmniFoundation.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 340115D411E515DB0016ADB3 /* libOmniFoundationTouchTests.a */;
+			remoteInfo = OmniFoundationTouchTests;
+		};
+		FFFB5BA4139EA19C00827D8D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FFFB5B87139EA19C00827D8D /* OmniFoundation.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 4A4E07CF08AA72B10098FF0F /* OFUnitTests.octest */;
+			remoteInfo = OFUnitTests;
+		};
+		FFFB5BA6139EA19C00827D8D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FFFB5B87139EA19C00827D8D /* OmniFoundation.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 4A4E077408AA72B10098FF0F /* OFSimpleLockTest */;
+			remoteInfo = OFSimpleLockTest;
+		};
+		FFFB5BA8139EA19C00827D8D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FFFB5B87139EA19C00827D8D /* OmniFoundation.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 4A4E079608AA72B10098FF0F /* OFDedicatedThreadSchedulerTest */;
+			remoteInfo = OFDedicatedThreadSchedulerTest;
+		};
+		FFFB5BAA139EA19C00827D8D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FFFB5B87139EA19C00827D8D /* OmniFoundation.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 4A4E07A608AA72B10098FF0F /* OFClobberDetectionTest */;
+			remoteInfo = OFClobberDetectionZoneTest;
+		};
+		FFFB5BAC139EA19C00827D8D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FFFB5B87139EA19C00827D8D /* OmniFoundation.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 4A4E07DF08AA72B10098FF0F /* OFMainThreadLockTest */;
+			remoteInfo = OFMainThreadLockTest;
+		};
+		FFFB5BAE139EA19C00827D8D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FFFB5B87139EA19C00827D8D /* OmniFoundation.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 345069110D747ED4004B40C2 /* OFCrashOnExceptionTest */;
+			remoteInfo = OFCrashOnExceptionTest;
+		};
+		FFFB5BB0139EA19C00827D8D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FFFB5B87139EA19C00827D8D /* OmniFoundation.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 343B36341034F68F0006290A /* OFRandomRepeatTest */;
+			remoteInfo = OFRandomRepeatTest;
+		};
+		FFFB5BBA139EA1A200827D8D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FFFB5BB2139EA1A200827D8D /* OmniQuartz.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 8DC2EF5B0486A6940098B216 /* OmniQuartz.framework */;
+			remoteInfo = OmniQuartz;
+		};
+		FFFB5BBC139EA1A200827D8D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FFFB5BB2139EA1A200827D8D /* OmniQuartz.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 345613D41193197700E7D187 /* libOmniQuartz.a */;
+			remoteInfo = OmniQuartzTouch;
+		};
+		FFFB5BC5139EA1A800827D8D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FFFB5BBE139EA1A800827D8D /* OmniUI.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D2AAC07E0554694100DB518D /* libIRTypography.a */;
+			remoteInfo = OmniUITouch;
+		};
+		FFFB5BCF139EA1AE00827D8D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FFFB5BC7139EA1AE00827D8D /* OmniUnzip.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 8DC2EF5B0486A6940098B216 /* OmniUnzip.framework */;
+			remoteInfo = OmniUnzip;
+		};
+		FFFB5BD1139EA1AE00827D8D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FFFB5BC7139EA1AE00827D8D /* OmniUnzip.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 34E20FCA119314D200ECA875 /* libOmniUnzip.a */;
+			remoteInfo = OmniUnzipTouch;
+		};
+		FFFB5BDA139EA1E100827D8D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FFFB5BB2139EA1A200827D8D /* OmniQuartz.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 345613D31193197700E7D187 /* OmniQuartzTouch */;
+			remoteInfo = OmniQuartzTouch;
+		};
+		FFFB5BDC139EA1E100827D8D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FFFB5B4B139EA17D00827D8D /* OmniAppKit.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 3434791411923B54007D0CE5 /* OmniAppKitTouch */;
+			remoteInfo = OmniAppKitTouch;
+		};
+		FFFB5BDE139EA1E100827D8D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FFFB5BBE139EA1A800827D8D /* OmniUI.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = D2AAC07D0554694100DB518D /* OmniUITouch */;
+			remoteInfo = OmniUITouch;
+		};
+		FFFB5BE0139EA1E100827D8D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FFFB5B64139EA18400827D8D /* OmniBase.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 342163B111907BF600C06E45 /* OmniBaseTouch */;
+			remoteInfo = OmniBaseTouch;
+		};
+		FFFB5BE2139EA1E100827D8D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FFFB5BC7139EA1AE00827D8D /* OmniUnzip.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 34E20FC9119314D200ECA875 /* OmniUnzipTouch */;
+			remoteInfo = OmniUnzipTouch;
+		};
+		FFFB5BE4139EA1E100827D8D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FFFB5B87139EA19C00827D8D /* OmniFoundation.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 344D08B91190D47300264D89 /* OmniFoundationTouch */;
+			remoteInfo = OmniFoundationTouch;
+		};
+		FFFB5BE6139EA1E100827D8D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FFFB5B77139EA19200827D8D /* OmniFileStore.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 34D06C53125D202500CA3963 /* OmniFileStoreTouch */;
+			remoteInfo = OmniFileStoreTouch;
+		};
+		FFFB5C0D139EA46100827D8D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FFFB5C06139EA46100827D8D /* IRFoundations.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = FF0A8BA91337AFB700DDA47C /* libIRFoundationsTouch.a */;
+			remoteInfo = IRFoundationsTouch;
+		};
+		FFFB5C73139EA47900827D8D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FFFB5C06139EA46100827D8D /* IRFoundations.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = FF0A8BA81337AFB700DDA47C /* IRFoundationsTouch */;
+			remoteInfo = IRFoundationsTouch;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		AA747D9E0F9514B9006C5449 /* IRTypography_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IRTypography_Prefix.pch; sourceTree = SOURCE_ROOT; };
+		AACBBE490F95108600F1A2B1 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		D2AAC07E0554694100DB518D /* libIRTypography.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libIRTypography.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		FFFB5AE7139E9F6B00827D8D /* CoreText.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreText.framework; path = System/Library/Frameworks/CoreText.framework; sourceTree = SDKROOT; };
+		FFFB5AF8139E9F9100827D8D /* IRManagedObjectTypographyPersisting.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IRManagedObjectTypographyPersisting.h; sourceTree = "<group>"; };
+		FFFB5AF9139E9F9100827D8D /* IRManagedObjectTypographyPresentationPrecalculating.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IRManagedObjectTypographyPresentationPrecalculating.h; sourceTree = "<group>"; };
+		FFFB5AFA139E9F9100827D8D /* IRManagedObjectTypographyPresenting.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IRManagedObjectTypographyPresenting.h; sourceTree = "<group>"; };
+		FFFB5AFB139E9F9100827D8D /* IRTextAttachmentLineHeightHackingCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IRTextAttachmentLineHeightHackingCell.h; sourceTree = "<group>"; };
+		FFFB5AFC139E9F9100827D8D /* IRTextAttachmentLineHeightHackingCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IRTextAttachmentLineHeightHackingCell.m; sourceTree = "<group>"; };
+		FFFB5AFD139E9F9100827D8D /* IRTextLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IRTextLayout.h; sourceTree = "<group>"; };
+		FFFB5AFE139E9F9100827D8D /* IRTextLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IRTextLayout.m; sourceTree = "<group>"; };
+		FFFB5AFF139E9F9100827D8D /* IRTypography+AttributedStringsTransforming.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "IRTypography+AttributedStringsTransforming.m"; sourceTree = "<group>"; };
+		FFFB5B00139E9F9100827D8D /* IRTypography+AttributedStringsTransformingConveniences.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "IRTypography+AttributedStringsTransformingConveniences.m"; sourceTree = "<group>"; };
+		FFFB5B01139E9F9100827D8D /* IRTypography+CoreText.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "IRTypography+CoreText.m"; sourceTree = "<group>"; };
+		FFFB5B02139E9F9100827D8D /* IRTypography+DataDetection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "IRTypography+DataDetection.m"; sourceTree = "<group>"; };
+		FFFB5B03139E9F9100827D8D /* IRTypography+Experimental.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "IRTypography+Experimental.m"; sourceTree = "<group>"; };
+		FFFB5B04139E9F9100827D8D /* IRTypography+Foundation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "IRTypography+Foundation.m"; sourceTree = "<group>"; };
+		FFFB5B05139E9F9100827D8D /* IRTypography+Interactivity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "IRTypography+Interactivity.m"; sourceTree = "<group>"; };
+		FFFB5B06139E9F9100827D8D /* IRTypography.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IRTypography.h; sourceTree = "<group>"; };
+		FFFB5B07139E9F9100827D8D /* IRTypography.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IRTypography.m; sourceTree = "<group>"; };
+		FFFB5B08139E9F9100827D8D /* IRTypographyDefines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IRTypographyDefines.h; sourceTree = "<group>"; };
+		FFFB5B2D139E9FA900827D8D /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		FFFB5B35139E9FC700827D8D /* NSAttributedString+IRTypographyAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSAttributedString+IRTypographyAdditions.h"; sourceTree = "<group>"; };
+		FFFB5B36139E9FC700827D8D /* NSAttributedString+IRTypographyAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSAttributedString+IRTypographyAdditions.m"; sourceTree = "<group>"; };
+		FFFB5B4B139EA17D00827D8D /* OmniAppKit.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = OmniAppKit.xcodeproj; path = Externals/OmniGroup/Frameworks/OmniAppKit/OmniAppKit.xcodeproj; sourceTree = "<group>"; };
+		FFFB5B64139EA18400827D8D /* OmniBase.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = OmniBase.xcodeproj; path = Externals/OmniGroup/Frameworks/OmniBase/OmniBase.xcodeproj; sourceTree = "<group>"; };
+		FFFB5B77139EA19200827D8D /* OmniFileStore.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = OmniFileStore.xcodeproj; path = Externals/OmniGroup/Frameworks/OmniFileStore/OmniFileStore.xcodeproj; sourceTree = "<group>"; };
+		FFFB5B87139EA19C00827D8D /* OmniFoundation.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = OmniFoundation.xcodeproj; path = Externals/OmniGroup/Frameworks/OmniFoundation/OmniFoundation.xcodeproj; sourceTree = "<group>"; };
+		FFFB5BB2139EA1A200827D8D /* OmniQuartz.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = OmniQuartz.xcodeproj; path = Externals/OmniGroup/Frameworks/OmniQuartz/OmniQuartz.xcodeproj; sourceTree = "<group>"; };
+		FFFB5BBE139EA1A800827D8D /* OmniUI.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = OmniUI.xcodeproj; path = Externals/OmniGroup/Frameworks/OmniUI/iPad/OmniUI.xcodeproj; sourceTree = "<group>"; };
+		FFFB5BC7139EA1AE00827D8D /* OmniUnzip.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = OmniUnzip.xcodeproj; path = Externals/OmniGroup/Frameworks/OmniUnzip/OmniUnzip.xcodeproj; sourceTree = "<group>"; };
+		FFFB5C06139EA46100827D8D /* IRFoundations.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = IRFoundations.xcodeproj; path = Externals/IRFoundations/IRFoundations/IRFoundations.xcodeproj; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D2AAC07C0554694100DB518D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AACBBE4A0F95108600F1A2B1 /* Foundation.framework in Frameworks */,
+				FFFB5AE8139E9F6B00827D8D /* CoreText.framework in Frameworks */,
+				FFFB5B2E139E9FA900827D8D /* UIKit.framework in Frameworks */,
+				FFFB5C72139EA46B00827D8D /* libIRFoundationsTouch.a in Frameworks */,
+				FFFB5BD3139EA1C500827D8D /* libOmniFileStore.a in Frameworks */,
+				FFFB5BD4139EA1C500827D8D /* libOmniBase.a in Frameworks */,
+				FFFB5BD5139EA1C500827D8D /* libOmniAppKit.a in Frameworks */,
+				FFFB5BD6139EA1C500827D8D /* libOmniFoundation.a in Frameworks */,
+				FFFB5BD7139EA1C500827D8D /* libOmniQuartz.a in Frameworks */,
+				FFFB5BD8139EA1C500827D8D /* libOmniUI.a in Frameworks */,
+				FFFB5BD9139EA1C500827D8D /* libOmniUnzip.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		034768DFFF38A50411DB9C8B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D2AAC07E0554694100DB518D /* libIRTypography.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0867D691FE84028FC02AAC07 /* IRTypography */ = {
+			isa = PBXGroup;
+			children = (
+				FFFB5AF7139E9F9100827D8D /* IRTypography */,
+				32C88DFF0371C24200C91783 /* Other Sources */,
+				0867D69AFE84028FC02AAC07 /* Frameworks */,
+				034768DFFF38A50411DB9C8B /* Products */,
+			);
+			name = IRTypography;
+			sourceTree = "<group>";
+		};
+		0867D69AFE84028FC02AAC07 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FFFB5B77139EA19200827D8D /* OmniFileStore.xcodeproj */,
+				FFFB5B64139EA18400827D8D /* OmniBase.xcodeproj */,
+				FFFB5B4B139EA17D00827D8D /* OmniAppKit.xcodeproj */,
+				FFFB5B87139EA19C00827D8D /* OmniFoundation.xcodeproj */,
+				FFFB5BB2139EA1A200827D8D /* OmniQuartz.xcodeproj */,
+				FFFB5BBE139EA1A800827D8D /* OmniUI.xcodeproj */,
+				FFFB5BC7139EA1AE00827D8D /* OmniUnzip.xcodeproj */,
+				FFFB5C06139EA46100827D8D /* IRFoundations.xcodeproj */,
+				AACBBE490F95108600F1A2B1 /* Foundation.framework */,
+				FFFB5AE7139E9F6B00827D8D /* CoreText.framework */,
+				FFFB5B2D139E9FA900827D8D /* UIKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		32C88DFF0371C24200C91783 /* Other Sources */ = {
+			isa = PBXGroup;
+			children = (
+				AA747D9E0F9514B9006C5449 /* IRTypography_Prefix.pch */,
+			);
+			name = "Other Sources";
+			sourceTree = "<group>";
+		};
+		FFFB5AF7139E9F9100827D8D /* IRTypography */ = {
+			isa = PBXGroup;
+			children = (
+				FFFB5B35139E9FC700827D8D /* NSAttributedString+IRTypographyAdditions.h */,
+				FFFB5B36139E9FC700827D8D /* NSAttributedString+IRTypographyAdditions.m */,
+				FFFB5AF8139E9F9100827D8D /* IRManagedObjectTypographyPersisting.h */,
+				FFFB5AF9139E9F9100827D8D /* IRManagedObjectTypographyPresentationPrecalculating.h */,
+				FFFB5AFA139E9F9100827D8D /* IRManagedObjectTypographyPresenting.h */,
+				FFFB5AFB139E9F9100827D8D /* IRTextAttachmentLineHeightHackingCell.h */,
+				FFFB5AFC139E9F9100827D8D /* IRTextAttachmentLineHeightHackingCell.m */,
+				FFFB5AFD139E9F9100827D8D /* IRTextLayout.h */,
+				FFFB5AFE139E9F9100827D8D /* IRTextLayout.m */,
+				FFFB5AFF139E9F9100827D8D /* IRTypography+AttributedStringsTransforming.m */,
+				FFFB5B00139E9F9100827D8D /* IRTypography+AttributedStringsTransformingConveniences.m */,
+				FFFB5B01139E9F9100827D8D /* IRTypography+CoreText.m */,
+				FFFB5B02139E9F9100827D8D /* IRTypography+DataDetection.m */,
+				FFFB5B03139E9F9100827D8D /* IRTypography+Experimental.m */,
+				FFFB5B04139E9F9100827D8D /* IRTypography+Foundation.m */,
+				FFFB5B05139E9F9100827D8D /* IRTypography+Interactivity.m */,
+				FFFB5B06139E9F9100827D8D /* IRTypography.h */,
+				FFFB5B07139E9F9100827D8D /* IRTypography.m */,
+				FFFB5B08139E9F9100827D8D /* IRTypographyDefines.h */,
+			);
+			path = IRTypography;
+			sourceTree = "<group>";
+		};
+		FFFB5B4C139EA17D00827D8D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FFFB5B59139EA17D00827D8D /* OmniAppKit.framework */,
+				FFFB5B5B139EA17D00827D8D /* OAUnitTests.octest */,
+				FFFB5B5D139EA17D00827D8D /* OAMakeImageSizeIntegral */,
+				FFFB5B5F139EA17D00827D8D /* OAPatternColorPicker.bundle */,
+				FFFB5B61139EA17D00827D8D /* libOmniAppKit.a */,
+				FFFB5B63139EA17D00827D8D /* libOmniAppKitTouchTests.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FFFB5B65139EA18400827D8D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FFFB5B70139EA18400827D8D /* OmniBase.framework */,
+				FFFB5B72139EA18400827D8D /* OBLoadBundle */,
+				FFFB5B74139EA18400827D8D /* libOmniBase.a */,
+				FFFB5B76139EA18400827D8D /* libOmniBaseTouchTests.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FFFB5B78139EA19200827D8D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FFFB5B82139EA19200827D8D /* OmniFileStore.framework */,
+				FFFB5B84139EA19200827D8D /* libOmniFileStore.a */,
+				FFFB5B86139EA19200827D8D /* ofs */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FFFB5B88139EA19C00827D8D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FFFB5B9F139EA19C00827D8D /* OmniFoundation.framework */,
+				FFFB5BA1139EA19C00827D8D /* libOmniFoundation.a */,
+				FFFB5BA3139EA19C00827D8D /* libOmniFoundationTouchTests.a */,
+				FFFB5BA5139EA19C00827D8D /* OFUnitTests.octest */,
+				FFFB5BA7139EA19C00827D8D /* OFSimpleLockTest */,
+				FFFB5BA9139EA19C00827D8D /* OFDedicatedThreadSchedulerTest */,
+				FFFB5BAB139EA19C00827D8D /* OFClobberDetectionTest */,
+				FFFB5BAD139EA19C00827D8D /* OFMainThreadLockTest */,
+				FFFB5BAF139EA19C00827D8D /* OFCrashOnExceptionTest */,
+				FFFB5BB1139EA19C00827D8D /* OFRandomRepeatTest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FFFB5BB3139EA1A200827D8D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FFFB5BBB139EA1A200827D8D /* OmniQuartz.framework */,
+				FFFB5BBD139EA1A200827D8D /* libOmniQuartz.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FFFB5BBF139EA1A800827D8D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FFFB5BC6139EA1A800827D8D /* libOmniUI.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FFFB5BC8139EA1AE00827D8D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FFFB5BD0139EA1AE00827D8D /* OmniUnzip.framework */,
+				FFFB5BD2139EA1AE00827D8D /* libOmniUnzip.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FFFB5C07139EA46100827D8D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FFFB5C0E139EA46100827D8D /* libIRFoundationsTouch.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		D2AAC07A0554694100DB518D /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AA747D9F0F9514B9006C5449 /* IRTypography_Prefix.pch in Headers */,
+				FFFB5B1A139E9F9500827D8D /* IRManagedObjectTypographyPersisting.h in Headers */,
+				FFFB5B1B139E9F9500827D8D /* IRManagedObjectTypographyPresentationPrecalculating.h in Headers */,
+				FFFB5B1C139E9F9500827D8D /* IRManagedObjectTypographyPresenting.h in Headers */,
+				FFFB5B1D139E9F9500827D8D /* IRTextAttachmentLineHeightHackingCell.h in Headers */,
+				FFFB5B1F139E9F9500827D8D /* IRTextLayout.h in Headers */,
+				FFFB5B28139E9F9500827D8D /* IRTypography.h in Headers */,
+				FFFB5B2A139E9F9500827D8D /* IRTypographyDefines.h in Headers */,
+				FFFB5B37139E9FC700827D8D /* NSAttributedString+IRTypographyAdditions.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		D2AAC07D0554694100DB518D /* IRTypography */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1DEB921E08733DC00010E9CD /* Build configuration list for PBXNativeTarget "IRTypography" */;
+			buildPhases = (
+				D2AAC07A0554694100DB518D /* Headers */,
+				D2AAC07B0554694100DB518D /* Sources */,
+				D2AAC07C0554694100DB518D /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FFFB5BDB139EA1E100827D8D /* PBXTargetDependency */,
+				FFFB5BDD139EA1E100827D8D /* PBXTargetDependency */,
+				FFFB5BDF139EA1E100827D8D /* PBXTargetDependency */,
+				FFFB5BE1139EA1E100827D8D /* PBXTargetDependency */,
+				FFFB5BE3139EA1E100827D8D /* PBXTargetDependency */,
+				FFFB5BE5139EA1E100827D8D /* PBXTargetDependency */,
+				FFFB5BE7139EA1E100827D8D /* PBXTargetDependency */,
+				FFFB5C74139EA47900827D8D /* PBXTargetDependency */,
+			);
+			name = IRTypography;
+			productName = IRTypography;
+			productReference = D2AAC07E0554694100DB518D /* libIRTypography.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0867D690FE84028FC02AAC07 /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = 1DEB922208733DC00010E9CD /* Build configuration list for PBXProject "IRTypography" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 1;
+			knownRegions = (
+				English,
+				Japanese,
+				French,
+				German,
+			);
+			mainGroup = 0867D691FE84028FC02AAC07 /* IRTypography */;
+			productRefGroup = 034768DFFF38A50411DB9C8B /* Products */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = FFFB5C07139EA46100827D8D /* Products */;
+					ProjectRef = FFFB5C06139EA46100827D8D /* IRFoundations.xcodeproj */;
+				},
+				{
+					ProductGroup = FFFB5B4C139EA17D00827D8D /* Products */;
+					ProjectRef = FFFB5B4B139EA17D00827D8D /* OmniAppKit.xcodeproj */;
+				},
+				{
+					ProductGroup = FFFB5B65139EA18400827D8D /* Products */;
+					ProjectRef = FFFB5B64139EA18400827D8D /* OmniBase.xcodeproj */;
+				},
+				{
+					ProductGroup = FFFB5B78139EA19200827D8D /* Products */;
+					ProjectRef = FFFB5B77139EA19200827D8D /* OmniFileStore.xcodeproj */;
+				},
+				{
+					ProductGroup = FFFB5B88139EA19C00827D8D /* Products */;
+					ProjectRef = FFFB5B87139EA19C00827D8D /* OmniFoundation.xcodeproj */;
+				},
+				{
+					ProductGroup = FFFB5BB3139EA1A200827D8D /* Products */;
+					ProjectRef = FFFB5BB2139EA1A200827D8D /* OmniQuartz.xcodeproj */;
+				},
+				{
+					ProductGroup = FFFB5BBF139EA1A800827D8D /* Products */;
+					ProjectRef = FFFB5BBE139EA1A800827D8D /* OmniUI.xcodeproj */;
+				},
+				{
+					ProductGroup = FFFB5BC8139EA1AE00827D8D /* Products */;
+					ProjectRef = FFFB5BC7139EA1AE00827D8D /* OmniUnzip.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				D2AAC07D0554694100DB518D /* IRTypography */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		FFFB5B59139EA17D00827D8D /* OmniAppKit.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = OmniAppKit.framework;
+			remoteRef = FFFB5B58139EA17D00827D8D /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		FFFB5B5B139EA17D00827D8D /* OAUnitTests.octest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = OAUnitTests.octest;
+			remoteRef = FFFB5B5A139EA17D00827D8D /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		FFFB5B5D139EA17D00827D8D /* OAMakeImageSizeIntegral */ = {
+			isa = PBXReferenceProxy;
+			fileType = "compiled.mach-o.executable";
+			path = OAMakeImageSizeIntegral;
+			remoteRef = FFFB5B5C139EA17D00827D8D /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		FFFB5B5F139EA17D00827D8D /* OAPatternColorPicker.bundle */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = OAPatternColorPicker.bundle;
+			remoteRef = FFFB5B5E139EA17D00827D8D /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		FFFB5B61139EA17D00827D8D /* libOmniAppKit.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libOmniAppKit.a;
+			remoteRef = FFFB5B60139EA17D00827D8D /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		FFFB5B63139EA17D00827D8D /* libOmniAppKitTouchTests.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libOmniAppKitTouchTests.a;
+			remoteRef = FFFB5B62139EA17D00827D8D /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		FFFB5B70139EA18400827D8D /* OmniBase.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = OmniBase.framework;
+			remoteRef = FFFB5B6F139EA18400827D8D /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		FFFB5B72139EA18400827D8D /* OBLoadBundle */ = {
+			isa = PBXReferenceProxy;
+			fileType = "compiled.mach-o.executable";
+			path = OBLoadBundle;
+			remoteRef = FFFB5B71139EA18400827D8D /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		FFFB5B74139EA18400827D8D /* libOmniBase.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libOmniBase.a;
+			remoteRef = FFFB5B73139EA18400827D8D /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		FFFB5B76139EA18400827D8D /* libOmniBaseTouchTests.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libOmniBaseTouchTests.a;
+			remoteRef = FFFB5B75139EA18400827D8D /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		FFFB5B82139EA19200827D8D /* OmniFileStore.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = OmniFileStore.framework;
+			remoteRef = FFFB5B81139EA19200827D8D /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		FFFB5B84139EA19200827D8D /* libOmniFileStore.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libOmniFileStore.a;
+			remoteRef = FFFB5B83139EA19200827D8D /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		FFFB5B86139EA19200827D8D /* ofs */ = {
+			isa = PBXReferenceProxy;
+			fileType = "compiled.mach-o.executable";
+			path = ofs;
+			remoteRef = FFFB5B85139EA19200827D8D /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		FFFB5B9F139EA19C00827D8D /* OmniFoundation.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = OmniFoundation.framework;
+			remoteRef = FFFB5B9E139EA19C00827D8D /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		FFFB5BA1139EA19C00827D8D /* libOmniFoundation.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libOmniFoundation.a;
+			remoteRef = FFFB5BA0139EA19C00827D8D /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		FFFB5BA3139EA19C00827D8D /* libOmniFoundationTouchTests.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libOmniFoundationTouchTests.a;
+			remoteRef = FFFB5BA2139EA19C00827D8D /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		FFFB5BA5139EA19C00827D8D /* OFUnitTests.octest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = OFUnitTests.octest;
+			remoteRef = FFFB5BA4139EA19C00827D8D /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		FFFB5BA7139EA19C00827D8D /* OFSimpleLockTest */ = {
+			isa = PBXReferenceProxy;
+			fileType = "compiled.mach-o.executable";
+			path = OFSimpleLockTest;
+			remoteRef = FFFB5BA6139EA19C00827D8D /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		FFFB5BA9139EA19C00827D8D /* OFDedicatedThreadSchedulerTest */ = {
+			isa = PBXReferenceProxy;
+			fileType = "compiled.mach-o.executable";
+			path = OFDedicatedThreadSchedulerTest;
+			remoteRef = FFFB5BA8139EA19C00827D8D /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		FFFB5BAB139EA19C00827D8D /* OFClobberDetectionTest */ = {
+			isa = PBXReferenceProxy;
+			fileType = "compiled.mach-o.executable";
+			path = OFClobberDetectionTest;
+			remoteRef = FFFB5BAA139EA19C00827D8D /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		FFFB5BAD139EA19C00827D8D /* OFMainThreadLockTest */ = {
+			isa = PBXReferenceProxy;
+			fileType = "compiled.mach-o.executable";
+			path = OFMainThreadLockTest;
+			remoteRef = FFFB5BAC139EA19C00827D8D /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		FFFB5BAF139EA19C00827D8D /* OFCrashOnExceptionTest */ = {
+			isa = PBXReferenceProxy;
+			fileType = "compiled.mach-o.executable";
+			path = OFCrashOnExceptionTest;
+			remoteRef = FFFB5BAE139EA19C00827D8D /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		FFFB5BB1139EA19C00827D8D /* OFRandomRepeatTest */ = {
+			isa = PBXReferenceProxy;
+			fileType = "compiled.mach-o.executable";
+			path = OFRandomRepeatTest;
+			remoteRef = FFFB5BB0139EA19C00827D8D /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		FFFB5BBB139EA1A200827D8D /* OmniQuartz.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = OmniQuartz.framework;
+			remoteRef = FFFB5BBA139EA1A200827D8D /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		FFFB5BBD139EA1A200827D8D /* libOmniQuartz.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libOmniQuartz.a;
+			remoteRef = FFFB5BBC139EA1A200827D8D /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		FFFB5BC6139EA1A800827D8D /* libOmniUI.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libOmniUI.a;
+			remoteRef = FFFB5BC5139EA1A800827D8D /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		FFFB5BD0139EA1AE00827D8D /* OmniUnzip.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = OmniUnzip.framework;
+			remoteRef = FFFB5BCF139EA1AE00827D8D /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		FFFB5BD2139EA1AE00827D8D /* libOmniUnzip.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libOmniUnzip.a;
+			remoteRef = FFFB5BD1139EA1AE00827D8D /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		FFFB5C0E139EA46100827D8D /* libIRFoundationsTouch.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libIRFoundationsTouch.a;
+			remoteRef = FFFB5C0D139EA46100827D8D /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D2AAC07B0554694100DB518D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FFFB5B1E139E9F9500827D8D /* IRTextAttachmentLineHeightHackingCell.m in Sources */,
+				FFFB5B20139E9F9500827D8D /* IRTextLayout.m in Sources */,
+				FFFB5B21139E9F9500827D8D /* IRTypography+AttributedStringsTransforming.m in Sources */,
+				FFFB5B22139E9F9500827D8D /* IRTypography+AttributedStringsTransformingConveniences.m in Sources */,
+				FFFB5B23139E9F9500827D8D /* IRTypography+CoreText.m in Sources */,
+				FFFB5B24139E9F9500827D8D /* IRTypography+DataDetection.m in Sources */,
+				FFFB5B25139E9F9500827D8D /* IRTypography+Experimental.m in Sources */,
+				FFFB5B26139E9F9500827D8D /* IRTypography+Foundation.m in Sources */,
+				FFFB5B27139E9F9500827D8D /* IRTypography+Interactivity.m in Sources */,
+				FFFB5B29139E9F9500827D8D /* IRTypography.m in Sources */,
+				FFFB5B38139E9FC700827D8D /* NSAttributedString+IRTypographyAdditions.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FFFB5BDB139EA1E100827D8D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = OmniQuartzTouch;
+			targetProxy = FFFB5BDA139EA1E100827D8D /* PBXContainerItemProxy */;
+		};
+		FFFB5BDD139EA1E100827D8D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = OmniAppKitTouch;
+			targetProxy = FFFB5BDC139EA1E100827D8D /* PBXContainerItemProxy */;
+		};
+		FFFB5BDF139EA1E100827D8D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = OmniUITouch;
+			targetProxy = FFFB5BDE139EA1E100827D8D /* PBXContainerItemProxy */;
+		};
+		FFFB5BE1139EA1E100827D8D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = OmniBaseTouch;
+			targetProxy = FFFB5BE0139EA1E100827D8D /* PBXContainerItemProxy */;
+		};
+		FFFB5BE3139EA1E100827D8D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = OmniUnzipTouch;
+			targetProxy = FFFB5BE2139EA1E100827D8D /* PBXContainerItemProxy */;
+		};
+		FFFB5BE5139EA1E100827D8D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = OmniFoundationTouch;
+			targetProxy = FFFB5BE4139EA1E100827D8D /* PBXContainerItemProxy */;
+		};
+		FFFB5BE7139EA1E100827D8D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = OmniFileStoreTouch;
+			targetProxy = FFFB5BE6139EA1E100827D8D /* PBXContainerItemProxy */;
+		};
+		FFFB5C74139EA47900827D8D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = IRFoundationsTouch;
+			targetProxy = FFFB5C73139EA47900827D8D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		1DEB921F08733DC00010E9CD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				COPY_PHASE_STRIP = NO;
+				DSTROOT = /tmp/IRTypography.dst;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_MODEL_TUNING = G5;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = IRTypography_Prefix.pch;
+				INSTALL_PATH = /usr/local/lib;
+				PRODUCT_NAME = IRTypography;
+			};
+			name = Debug;
+		};
+		1DEB922008733DC00010E9CD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				DSTROOT = /tmp/IRTypography.dst;
+				GCC_MODEL_TUNING = G5;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = IRTypography_Prefix.pch;
+				INSTALL_PATH = /usr/local/lib;
+				PRODUCT_NAME = IRTypography;
+			};
+			name = Release;
+		};
+		1DEB922308733DC00010E9CD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(value)",
+					"\"$PROJECT_DERIVED_FILE_DIR\"",
+					"\"$PROJECT_DIR/Externals/IRFoundations/**\"",
+				);
+				OTHER_LDFLAGS = "-ObjC";
+				PREBINDING = NO;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		1DEB922408733DC00010E9CD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(value)",
+					"\"$PROJECT_DERIVED_FILE_DIR\"",
+					"\"$PROJECT_DIR/Externals/IRFoundations/**\"",
+				);
+				OTHER_LDFLAGS = "-ObjC";
+				PREBINDING = NO;
+				SDKROOT = iphoneos;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1DEB921E08733DC00010E9CD /* Build configuration list for PBXNativeTarget "IRTypography" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1DEB921F08733DC00010E9CD /* Debug */,
+				1DEB922008733DC00010E9CD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1DEB922208733DC00010E9CD /* Build configuration list for PBXProject "IRTypography" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1DEB922308733DC00010E9CD /* Debug */,
+				1DEB922408733DC00010E9CD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 0867D690FE84028FC02AAC07 /* Project object */;
+}
